@@ -1,0 +1,148 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f;
+    color: white;
+}
+header {
+    background-color: #002855;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+section {
+    padding: 50px;
+    text-align: center;
+    background-color: #003366;
+    margin: 20px;
+    border-radius: 10px;
+}
+.project, .skills-list, .poem-gallery, .services {
+    background-color: #f0f8ff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: black;
+}
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+}
+.skills-list li {
+    padding: 10px;
+    background: #8fa3d1;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.profile-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px 0;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+.lightbox.show {
+    display: flex;
+}
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.contact-form {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    color: black;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    background-color: #002855;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.services h2 {
+    font-size: 2rem;
+    color: #002855;
+    margin-bottom: 20px;
+}
+.services p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+.services ul li {
+    font-size: 1.1rem;
+    background-color: #8fa3d1;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
